@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/01377fe30a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="Images/logo.png" class="logo">
+                </a>   
+                <ul id="sidemenus">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#skills">Skills</a></li>   -->
+                    <li><a href="#blog">Writings</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="side-image"></div>
+                <div class="header-text">
+                    <h1>Hi, I'm <span>Hadeed</span> Qamar</h1>
+                    <p>Physics Enthusiast</p>
+                </div>
+            </div>
+            <span class="home-image"></span>
+        </div>
+
+    <!-- About -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/img1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="text">I am an undergraduate physics student with a passion for theoretical research,
+                        problem-solving, and practical innovation. My interests span from plasma physics and
+                        computational
+                        modeling to philosophy and history. I believe in the power of interdisciplinary learning where
+                        various disciplibes of life converge to create meaningful insights. Constantly seeking to push
+                        boundaries, I aim to bridge the gap between knowledge and application.
+                        My journey in physics has not only deepened my understanding of the universe but also sparked
+                        an appreciation for the underlying principles of life and existence. Whether through theoretical
+                        research, hands-on projects, or thought-provoking writings, I strive to transform complex ideas
+                        into tangible impact.
+                        <br>For me, curiosity is not just a trait—it is a discipline. I approach learning with depth,
+                        seeking to understand not just how things work, but why. Whether it’s unraveling the
+                        mathematical
+                        beauty of physics, real-world applications, or exploring the timeless questions of philosophy.
+                        Beyond academics, I value independence and intellectual integrity. I strive for self-sufficiency
+                        in learning and problem-solving, believing that every challenge is an opportunity to refine
+                        one’s
+                        thinking. My journey is not just about accumulating knowledge but about applying it to solve
+                        problems, innovate, and contribute meaningfully to both scientific and philosophical discourse.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('professional development')">Professional Development</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span>
+                            <li>C++</li>
+                            <li>Python (NumPy, Matplotlib, SciPy, SymPy)</li>
+                            <li>Arduino IDE</li>
+                            </li>
+                            <li><span>Physics and Research</span>
+                            <li>Data Analsis, Experimental Physics, LaTex</li>
+                            </li>
+                            <li><span>Writing and Communication</span>
+                            <li>Scientific Writing, Blogging</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span>
+                            <li>Arduino Oscilloscope</li>
+                            </li>
+                            <li><span>2023</span>
+                            <li>Chess Game Using C++ with SFML</li>
+                            </li>
+                            <li><span>2022-Onwards</span>
+                            <li>Medium Writing</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - Onwards</span>
+                            <li>Undergrad in Physics</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="professional development">
+                        <ul>
+                            <li><span>Data Science for Beginners</span>
+                            <li>Coursera</li>
+                            </li>
+                            <li><span>PCB Design</span>
+                            <li>Multiple YouTube Creators</li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Blog -->
+
+
+    <div id="blog">
+        <div class="container">
+            <h1 class="sub-title">My Writings</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/vow of silence.png">
+                    <div class="layer">
+                        <h3>The Vow of Silence</h3>
+                        <a href="https://medium.com/@hadeedqamar97/the-vow-of-silence-8c28d506a58f" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/nostalgia of suffering.png">
+                    <div class="layer">
+                        <h3>Nostalgia of Suffering</h3>
+                        <a href="https://medium.com/@hadeedqamar97/nostalgia-of-suffering-13787d05b22a" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/from words to worlds.png">
+                    <div class="layer">
+                        <h3>From Words to Worlds: How language unleashes your imaginations</h3>
+                        <a href="https://medium.com/@hadeedqamar97/from-words-to-worlds-how-language-unleashes-your-imaginations-9580412bf36a" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> hadeedqamar97@gmail.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-medium"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-link')
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab')
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab')
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById('sidemenus');
+
+        function openmenu() {
+            sidemenu.style.right = '0'
+        }
+        function closemenu() {
+            sidemenu.style.right = '-100px';
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzrDvMhHswA484qn3Dtt1-YX2WDSCF8DzOcWozZl904QOGeRU0ZSA91KsYeucuvlTP1/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = 'Message sent successfully'
+                    setTimeout(function(){
+                        msg.innerHTML = ''
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
