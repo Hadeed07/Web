@@ -27,7 +27,7 @@ html{
     top: 0;
     overflow: hidden;
     background: linear-gradient(to left, rgba(11, 19, 25, 0) 0%, rgba(11, 17, 25, 1) 100%),
-                url(./Images/img.JPEG);   /* another color is 23, 23, 23 */
+                url(./Images/img.jpeg);   /* another color is 23, 23, 23 */
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
